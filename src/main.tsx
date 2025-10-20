@@ -12,7 +12,8 @@ import Receitas from './components/Receitas.tsx'
 import Publicadas from './components/Publicar.tsx';
 import VerDetalhes from './components/VerDetalhesR.tsx'
 import VPerfil from './components/Perfil copy.tsx'
-
+import VCdastro from './components/Cadastronew.tsx'
+import LoginNew from './components/LoginNew.tsx'
 import 'bootstrap/dist/css/bootstrap.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -57,8 +58,16 @@ const router = createBrowserRouter([
   element: <VerDetalhes/>
 },
 {
-  path: '/aba',
+  path: '/loginTr',
   element: <VPerfil/>
+},
+{
+  path: '/cadastronew',
+  element: <VCdastro/>
+},
+{
+  path: '/loginnew',
+  element: <LoginNew/>
 }
 ]);
 
